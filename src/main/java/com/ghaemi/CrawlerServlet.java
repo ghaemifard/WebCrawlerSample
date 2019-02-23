@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *  This servlet acts as a dynamic non-persistence web crawler for Tweeter and CNN web sites.
+ *  This servlet acts as a dynamic non-persistence web crawler for Twitter and CNN websites.
  * 
  * @author Ghaemi
  */
@@ -64,7 +64,7 @@ public class CrawlerServlet extends HttpServlet {
     
     @Override
     public String getServletInfo() {
-        return "Tweeter and CNN Crawler";
+        return "Twitter and CNN Crawler";
     } 
 
 }

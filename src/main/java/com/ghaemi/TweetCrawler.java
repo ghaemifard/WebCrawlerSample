@@ -13,13 +13,13 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 /**
- *  A simple Tweeter data extractor 
+ *  A simple data extractor for Twitter
  * 
  * @author praghletoos
  */
 public class TweetCrawler {
     
-    // returns a list o tweets
+    // returns a list of tweets
     public static List<String> getTweets(String id,int count){
         List<String> tweets = new ArrayList<>();
         if(id.length() ==0)
@@ -60,7 +60,7 @@ public class TweetCrawler {
         }
     }
     
-    //gives the name of a tweeter account
+    //gives the name of a Twitter account
     public static String getName(String id){
         if(id.length() ==0)
             id = "realDonaldTrump";
