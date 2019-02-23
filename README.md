@@ -12,7 +12,7 @@ Extracting data from CNN web pages is a heavy task, because the size of each web
 
   - Configuring the web crawler so as to fetch any desired data 
 
-There is a form on the top of the web page, which can be used to specify the keyword you are interested in, on CNN website (the default value is 'trump'). Also we can get the latest tweets of anyone in Twitter.
+There is a form on the top of the web page, which can be used to specify the keyword you are interested in, on CNN website (the default value is 'trump'). Also you can get the latest tweets of anyone in Twitter.
 
 ### Preview
 
