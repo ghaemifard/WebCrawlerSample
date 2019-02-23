@@ -18,6 +18,8 @@ import org.jsoup.select.Elements;
  * @author praghletoos
  */
 public class TweetCrawler {
+    
+    // returns a list o tweets
     public static List<String> getTweets(String id,int count){
         List<String> tweets = new ArrayList<>();
         if(id.length() ==0)
@@ -25,6 +27,10 @@ public class TweetCrawler {
         
         if(count<=0){
             count = 25;
+        } 
+        
+        if(count>200){
+            count = 200;
         } 
         
         String URL = "https://twitter.com/"+id;
@@ -54,6 +60,7 @@ public class TweetCrawler {
         }
     }
     
+    //gives the name of a tweeter account
     public static String getName(String id){
         if(id.length() ==0)
             id = "realDonaldTrump";

@@ -25,6 +25,13 @@ public class SimpleCNNCrawler {
     private int MaxReadArticles = 100;
     
     
+    /**
+     *  Getting info from CNN website
+     * 
+     * @param query The keyword to filter out CNN articles
+     * @param size the maximum number of CNN articles that should be returned
+     * @return List of CNN headlines.
+     */
     public List<CNNNews> getNews(String query,int size){
         List<CNNNews> res = new ArrayList<>();
         
@@ -34,6 +41,10 @@ public class SimpleCNNCrawler {
         final String keyword = query;
         if(size<=0)
             size = 25;
+        
+        if(size>MaxReadArticles){
+            size = MaxReadArticles;
+        }
         
         try{
             List<String> firstNews = getSiteMaps();
@@ -61,7 +72,8 @@ public class SimpleCNNCrawler {
     private SimpleCNNCrawler() {
     }
     
-    /** It is a heavy task. The size of each web page of CNN is almost 2MB (just the text).
+    /** The third stage.
+     *  It is a heavy task. The size of each web page of CNN is almost 2MB (just the text).
      *  This method is re-implemented in ShowNews servlet
      * @param articles 
      */
@@ -70,7 +82,11 @@ public class SimpleCNNCrawler {
         
     }
     
-    
+    /**
+     * The second stage. it extracts essential info from the CNN sitemap files.
+     * @param sources List of URLs with XML format
+     * @return 
+     */
     
     private List<CNNNews> getBasicArticleInfo(List<String> sources) {
         List<CNNNews> res = new ArrayList<>();
@@ -127,7 +143,10 @@ public class SimpleCNNCrawler {
 
         return res;
     }
-    
+    /**
+     * The first stage. It provides other URLs which contains information about news articles.
+     * @return A list of URLs with XML format
+     */
     private List<String> getSiteMaps() {
         List<String> res = new ArrayList<>();
         try {

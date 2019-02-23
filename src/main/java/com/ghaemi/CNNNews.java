@@ -29,7 +29,8 @@ public class CNNNews {
         this.imgTitle = imgTitle;
     }
     public boolean containts(String key){
-        return addr.contains(key) || imgAddr.contains(key) || imgTitle.contains(key);
+        key = key.toLowerCase();
+        return addr.toLowerCase().contains(key) || imgAddr.toLowerCase().contains(key) || imgTitle.toLowerCase().contains(key);
     }
 
     @Override
@@ -81,7 +82,7 @@ public class CNNNews {
     }
 
     public void setImgTitle(String imgTitle) {
-        if( imgTitle != null && imgTitle.length() > 0)
+        if( imgTitle != null && imgTitle.trim().length() > 0)
         this.imgTitle = imgTitle;
     }
 

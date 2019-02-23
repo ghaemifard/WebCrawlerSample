@@ -65,6 +65,6 @@ public class CrawlerServlet extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Tweeter and CNN Crawler";
-    }// </editor-fold>
+    } 
 
 }
