@@ -6,7 +6,7 @@ This repository is a simple web carwler for CNN and Twitter websites. It extract
   - Not using any data storage (it can lead to performance issues though)
   - Searching for a keyword in CNN articles and limiting the results
 
-# New Features!
+### New Features!
 
   - Configuring the web crawler so as to fetch any desired data 
 
