@@ -1,8 +1,8 @@
 # WebCrawlerSample
  
-This repository is a simple web carwler for CNN and Twitter websites. It extracts latest tweets from a specific ID, and latest CNN articles, and then shows them in a single web page. 
+This repository is a simple web carwler for CNN and Twitter websites. It extracts latest tweets from a specific ID, and latest CNN articles, and then shows them on a single web page. 
 
-  - Viewing latest tweets and CNN articles in a single page
+  - Viewing latest tweets and CNN articles on a single page
   - Not using any data storage (it can lead to performance issues though)
   - Searching for a keyword in CNN articles and limiting the results
 
@@ -12,7 +12,7 @@ Extracting data from CNN web pages is a heavy task, because the size of each web
 
   - Configuring the web crawler so as to fetch any desired data 
 
-There is a form in the top of the web page, which can be used to specify the keyword you are interested in, on CNN website (the default value is 'trump'). Also we can get the latest tweets of anyone in Tweeter.
+There is a form on the top of the web page, which can be used to specify the keyword you are interested in, on CNN website (the default value is 'trump'). Also we can get the latest tweets of anyone in Tweeter.
 
 ### Preview
 
